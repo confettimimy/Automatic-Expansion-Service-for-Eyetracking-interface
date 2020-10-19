@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Hello world demo written in Brython www.brython.info">
+<meta name="keywords" content="Python,Brython">
+<meta charset="iso-8859-1">
+<title>eyetracker! move!</title>
+
+
+
+<script type="text/javascript" src="brython.js"></script>
+<script type="text/javascript" src="brython_stdlib.js"></script>
+</head>
+
+<body onload="brython(1)">
+
+<script type="text/python">
+
+
+
+
+
+
+
+from browser import document, alert
+
+def echo(ev):
+    alert("Hello {} !".format(document["zone"].value))
+
+document["test"].bind("click", echo)
+
+
+
+
+
+
+//import os
+//import tobii_research as tr
+import numpy as np
+import win32api
+import time
+
+found_eyetrackers = tr.find_all_eyetrackers()
+
+eyetracker = found_eyetrackers[0]
+print("Address: " + eyetracker.address)
+print("Model: " + eyetracker.model)
+print("Name (It's OK if this is empty): " + eyetracker.device_name)
+print("Serial number: " + eyetracker.serial_number)
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+ <p>Your name is : <input id="zone" autocomplete="off">
+<button id="test"> * clic !!!!! </button> 
+</body>
+
+</html>

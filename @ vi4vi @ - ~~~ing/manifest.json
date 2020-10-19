@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "VI4VI",
+  "version": "0.9",
+  "description" : "Voice interface for the visually impaired using voice commands ",
+   "content_scripts": [{
+        "run_at": "document_end",
+        "matches": [
+            "https://*/*",
+            "http://*/*"
+        ],
+        "js": ["assets/jquery-3.3.1.js", "content-script.js"]
+    }],
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+	"background": {
+		"scripts":["background.js"]
+},
+    "permissions": [
+        "activeTab",
+        "https://ajax.googleapis.com/"
+    ], 
+	"web_accessible_resources": [
+	"images/*.png"
+	]
+  }
