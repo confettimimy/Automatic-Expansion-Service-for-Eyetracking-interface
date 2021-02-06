@@ -4,7 +4,7 @@
 
 
 
-<img src="./readme_img/실행객체 확대.gif"  width="" height="">   
+<img src="./readme_img/실행객체 확대.gif"  width="800" height="600" border: 5px solid #555>   
 
 
 
@@ -12,12 +12,10 @@
 
 
 
-![시선을 갖다대는 곳마다 확대](./readme_img/실행객체 확대.gif)
+
 
 
 
 #
 
-
-
-![자주 쓰는 메뉴 확대](./readme_img/양 옆 바.gif)
+<img src="./readme_img/양 옆 바.gif"  width="" height="">   
