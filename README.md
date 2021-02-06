@@ -4,7 +4,7 @@
 
 
 
-<img src="./readme_img/실행객체 확대.gif"  width="800" height="600" border: 5px solid #555>   
+<img src="./readme_img/실행객체 확대.gif"  width="800" height="600" border="5px solid #555">   
 
 
 
